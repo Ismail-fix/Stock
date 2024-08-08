@@ -1,0 +1,9 @@
+streamlit
+tweepy
+vaderSentiment
+pandas
+yfinance
+prophet
+plotly
+scikit-learn
+keras
