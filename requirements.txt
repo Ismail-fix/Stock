@@ -7,5 +7,4 @@ keras==3.4.1
 tweepy==4.14.0
 vadersentiment==3.3.2
 pandas==2.2.2
-numpy==1.24.4  # Downgraded numpy version
 
