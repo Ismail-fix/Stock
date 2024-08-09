@@ -64,10 +64,11 @@ selected_ticker = company_tickers[selected_company]
 period = n_years * 252
 
 # Fetch and display company description
+import wikipediaapi
+
 def get_wikipedia_summary(company_name):
     wiki_wiki = wikipediaapi.Wikipedia(
-        language='en',
-        user_agent="StokPred/1.0 (Local Development; ismail.benotmane02@gmail.com)"
+        language='en'
     )
     page = wiki_wiki.page(company_name)
     if page.exists():
@@ -75,6 +76,7 @@ def get_wikipedia_summary(company_name):
         return summary
     else:
         return "No Wikipedia summary available for this company."
+
 
 company_description = get_wikipedia_summary(selected_company.split(" (")[0])
 st.sidebar.write(f"**{selected_company}**: {company_description}")
