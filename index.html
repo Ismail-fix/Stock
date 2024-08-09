@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>📈 Stock Prediction Dashboard</h1>
+
+        <form id="prediction-form">
+            <label for="company">Select a company for prediction:</label>
+            <select id="company" name="company">
+                <option value="AAPL">Apple Inc.</option>
+                <option value="GOOG">Alphabet Inc. (Google)</option>
+                <option value="MSFT">Microsoft Corporation</option>
+                <!-- Add more companies as options -->
+            </select>
+
+            <label for="years">Years of prediction:</label>
+            <input type="range" id="years" name="years" min="1" max="4" value="1">
+            <span id="yearsValue">1</span> years
+
+            <button type="submit">Get Prediction</button>
+        </form>
+
+        <div id="company-description"></div>
+        <div id="charts-container">
+            <!-- Charts and other visual data will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
