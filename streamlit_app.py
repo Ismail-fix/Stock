@@ -11,6 +11,7 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dense
 import pandas as pd
 import numpy as np
+np.float_ = np.float64
 import pytz
 import wikipediaapi
 import tweepy
