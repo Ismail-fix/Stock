@@ -1,14 +1,14 @@
-streamlit==1.37.0
+streamlit==1.37.1
 yfinance==0.2.41
-holidays==0.25
 prophet==1.1.5
 plotly==5.23.0
 scikit-learn==1.5.1
 keras==3.4.1
 tweepy==4.14.0
 vadersentiment==3.3.2
-pandas==2.2.2
-numpy==1.26.0
+pandas==2.1.0  # Compatible with numpy 1.24.4
+numpy==1.24.4
 pytz==2023.3
 wikipedia-api==0.5.4
+
 
